@@ -67,6 +67,7 @@ article {
 .blockIcons {
     display: flex;
     align-items: center;
+    justify-content: left;
     width: 1264px;
     height: 80px;
     border-radius: 16px;
@@ -91,9 +92,11 @@ article {
 }
 
 .company {
-    margin-left: 72px;
+    position: absolute;
+    left: 575px;
 }
 
 .number {
-    margin-left: 185px;
+    position: absolute;
+    left: 832px;
 }
