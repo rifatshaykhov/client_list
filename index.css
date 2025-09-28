@@ -44,11 +44,16 @@ article {
     justify-content: space-between;
     align-items: center;
     border: 1px solid blue;
-    margin: 40px 7px 0px 52px;
+    margin: 40px 7px 0px 16px;
 }
 
 .client_bar div {
     color: #2C3646A3;
     font-size: 18px;
     font-weight: 500;
+}
+
+.button {
+    display: flex;
+    gap: 16px;
 }
