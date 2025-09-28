@@ -72,6 +72,7 @@ article {
     border-radius: 16px;
     background-color: white;
     border: 1px solid green;
+    font-size: 16px;
 }
 
 .button1 {
@@ -81,12 +82,18 @@ article {
 .named {
     display: flex;
     align-items: center;
-    border: 1px solid red;
     margin-left: 16px;
     gap: 7px;
-    font-size: 16px;
 }
 
 .named p {
     color: #2C3646A3;
+}
+
+.company {
+    margin-left: 72px;
+}
+
+.number {
+    margin-left: 185px;
 }
