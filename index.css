@@ -11,15 +11,15 @@ body {
 
 article {
     width: 1440px;
-    border: 1px solid red;
     margin-top: 30px;
+    font-family: sans-serif;
 }
 
 .client_list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Roboto;
+    border: 1px solid red;
 }
 
 .client_list div {
@@ -38,4 +38,18 @@ article {
 
 .client_list h3 {
     font-size: 24px;
+}
+
+.client_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
+    margin: 40px 7px 0px 52px;
+}
+
+.client_bar div {
+    color: #2C3646A3;
+    font-size: 18px;
+    font-weight: 500;
 }
