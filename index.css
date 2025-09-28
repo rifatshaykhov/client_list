@@ -43,8 +43,8 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px 7px 0px 52px;
     border: 1px solid blue;
+    margin: 40px 7px 0px 52px;
 }
 
 .client_bar div {
