@@ -9,7 +9,7 @@ body {
     font-family: sans-serif;
     width: 1440px;
     position: absolute;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .client_list {
@@ -100,6 +100,7 @@ body {
     font-size: 16px;
     border-radius: 99px;
     margin-left: 827px;
+    font-weight: 600;
 }
 
 .date {
@@ -113,4 +114,19 @@ body {
     justify-content: center;
     position: absolute;
     margin-left: 1230px;
+}
+
+.status1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    height: 35px;
+    background-color:#FFD6CD;
+    color:#DF0000;
+    position: absolute;
+    font-size: 16px;
+    border-radius: 99px;
+    margin-left: 827px;
+    font-weight: 600;
 }
