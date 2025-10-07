@@ -63,6 +63,10 @@ body {
     margin: 13px 89px 0px 87px;
 }
 
+.blockIcons.active {
+    background-color: #C9C0FF;
+}
+
 .button1 {
     margin-left: 17px;
     background: none;
