@@ -57,7 +57,4 @@ btn0.addEventListener('click', () => {
             };
         });
     };
-
-
-
 });
