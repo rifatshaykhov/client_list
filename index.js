@@ -17,6 +17,7 @@ button.forEach(btn => {
             };
         } else {
             btn.innerHTML = '<img src="images/box.svg">';
+            btn0.innerHTML = '<img src="images/box.svg">';
             if (parentBlock) {
                 parentBlock.style.backgroundColor = 'white';
             };
@@ -42,6 +43,21 @@ btn0.addEventListener('click', () => {
     });
 
     } else {
-        btn0.innerHTML = '<img src="images/box.svg">';    
-    };    
+        btn0.innerHTML = '<img src="images/box.svg">';
+        
+        button.forEach(btn => {
+
+            const parentBlock = btn.parentElement;
+
+            if (btn.innerHTML === '<img src="images/checkbox.svg">') {
+                btn.innerHTML = '<img src="images/box.svg">';
+                if (parentBlock) {
+                    parentBlock.style.backgroundColor = 'white';
+                };    
+            };
+        });
+    };
+
+
+
 });
