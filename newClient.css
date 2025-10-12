@@ -3,3 +3,27 @@
     padding: 0;
     margin: 0;
 }
+
+.newClient {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}    
+
+.backend {
+    display: flex;
+    color: #C0C0C0;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.backend img {
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
+}
