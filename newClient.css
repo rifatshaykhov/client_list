@@ -4,10 +4,17 @@
     margin: 0;
 }
 
+body {
+    background-color: lightgrey;
+}
+
 .newClient {
     position: absolute;
     top: 50px;
     left: 100px;
+    padding: 50px 100px 50px 100px;
+    border: 2px solid blue;
+    background-color: white;
 }    
 
 .backend {
@@ -54,4 +61,47 @@ a {
 
 .form-row input:focus {
     outline: 2px solid #C0C0C0;
+}
+
+#status {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 35px;
+    background-color: #CEFFCD;
+    color: #337232;
+    font-size: 16px;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: grey;
+    font-size: 16px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+}
+
+.date h3 {
+    color: grey;
+}
+
+.date p {
+    font-size: 20px;
 }
