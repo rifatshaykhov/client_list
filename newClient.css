@@ -27,3 +27,31 @@
 a {
     text-decoration: none;
 }
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+    margin: 20px 0 20px 0;
+}
+
+.form-row label {
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.form-row input {
+    display: flex;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #C0C0C0;
+    font-size: 16px;
+    color: grey;
+    padding-left: 20px;
+}
+
+.form-row input:focus {
+    outline: 2px solid #C0C0C0;
+}
