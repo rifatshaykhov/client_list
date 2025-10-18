@@ -4,6 +4,8 @@ const button = document.querySelectorAll('.button1');
 
 const btn0 = document.querySelector('#button');
 
+const client = document.querySelector('#newClients');
+
 
 button.forEach(btn => {
     btn.addEventListener('click', () => {
