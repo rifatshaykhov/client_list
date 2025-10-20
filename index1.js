@@ -1,18 +1,48 @@
 const saved = document.querySelector('#save');
 
-const newClientDiv = document.createElement('div')
+const clientsList = document.querySelector('#newClients');
 
-newClientDiv.innerHTML = '<button class="button1" type="button"><img src="images/box.svg"></button><div class="named"><img src="images/Doe.svg"><div><h4>Джон Доу</h4><p>john.doe@gmail.com</p></div></div>'
+const fullName = document.querySelector('#full-name');
 
-newClientDiv.className = 'blockIcons';
+const email = document.querySelector('#email');
 
-const clientsList1 = document.querySelector('#newClients');
+const company = document.querySelector('#company');
 
-clientsList1.appendChild(newClientDiv);
+const phone = document.querySelector('#phone');
+
+const date = document.querySelector('#date');
+
+const input = document.querySelectorAll('input');
+
+const form = document.querySelector('.form-row');
+
+const newDiv = document.createElement('div');
+
+newDiv.className = 'blockIcons';
 
 
 
-saved.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('sdfsdfsdf');
-});
+    window.location.href = 'index.html';
+})
+
+// clientsList.insertAdjacentHTML('afterbegin', `<div class="blockIcons">
+//         <button class="button1" type="button"><img src="images/box.svg"></button>
+//         <div class="named">
+//           <img src="images/Doe.svg">
+//           <div>
+//             <h4>${fullName}</h4>
+//             <p>${email}</p>
+//           </div>
+//         </div>
+//         <div class="company">
+//           <h4>${company}</h4>
+//         </div>
+//         <div class="number">
+//           <h4>${phone}</h4>
+//         </div>
+//         <div class="status">Активен</div>
+//         <div class="date">10 марта 2025</div>
+//         <div class="menu"><img src="images/dot.svg"></div>
+//       </div>`)

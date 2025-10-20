@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <title>NewClient</title>
     <link rel="stylesheet" href="newClient.css">
-    <!-- <script defer src="index.js"></script> -->
-    <script defer src="index1.js"></script>
+    <script defer src="index.js"></script>
+    <!-- <script defer src="index1.js"></script> -->
 </head>
 <body>
     <article class="newClient">
@@ -13,39 +13,36 @@
 
         <div class="add"><h1>Добавить клиента</h1></div>
 
-        <div class='form-row'>
+        <form class='form-row' action="index.html" method="post">
             <label for='full-name'>ИМЯ</label>
             <input id='full-name' name='full-name' type='text' placeholder="Роман Кограмов"/>
-        </div>
 
-        <div class='form-row'>
             <label for='email'>КОНТАКТ</label>
             <input id='email' name='email' type='text' placeholder="romgramov@gmail.com"/>
-        </div>
-        <div class='form-row'>
+
             <label for='company'>КОМПАНИЯ</label>
             <input id='company' name='company' type='text' placeholder="ROM&ANCE"/>
-        </div>
-        <div class='form-row'>
+
             <label for='phone'>ТЕЛЕФОН</label>
             <input id='phone' name='full-name' type='text' placeholder="+7 (961) 435-23-53"/>
-        </div>
 
-        <div id="status">
-            <div class="block">
-                <h3>СТАТУС</h3>
-                <div class="status">Активен</div>
+            <div id="status">
+                <div class="block">
+                    <h3>СТАТУС</h3>
+                    <div class="status">Активен</div>
+                </div>
+                <div class="date">
+                    <h3>ДАТА ДОБАВЛЕНИЯ</h3>
+                    <p id="date">10 Марта 2025</p>
+                </div>
+            </div> 
+            
+            <div id="btn">
+                <button id="save" type="submit">Сохранить</button>
+                <div id="delete">Удалить</div>
             </div>
-            <div class="date">
-                <h3>ДАТА ДОБАВЛЕНИЯ</h3>
-                <p>10 Марта 2025</p>
-            </div>
-        </div>
-        
-        <div id="btn">
-            <a href="index.html"><div id="save">Сохранить</div></a>
-            <div id="delete">Удалить</div>
-        </div>
+
+        </form>
                     
     </article>
 </body>
