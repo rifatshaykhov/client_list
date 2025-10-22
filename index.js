@@ -99,8 +99,8 @@ window.addEventListener('load', function() {
     const email = params.get('email');
     const company = params.get('company');
     const phone = params.get('phone');
-    if (name !== null && email !== null && company !== null && phone !== null) {
-        if (name !== '' && email !== 'null' && company !== 'null' && phone !== 'null'){
+    if ((name !== null) && (email !== null) && (company !== null) && (phone !== null)) {
+        if (name !== '' && email !== '' && company !== '' && phone !== ''){
             addCL(name, email, company, phone);
         }    
     }
