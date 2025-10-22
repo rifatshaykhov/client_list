@@ -1,6 +1,6 @@
 const saved = document.querySelector('#save');
 
-const clientsList = document.querySelector('#newClients');
+const clientsList = document.querySelector('#new');
 
 const fullName = document.querySelector('#full-name');
 
@@ -19,13 +19,6 @@ const form = document.querySelector('.form-row');
 const newDiv = document.createElement('div');
 
 newDiv.className = 'blockIcons';
-
-
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    window.location.href = 'index.html';
-})
 
 // clientsList.insertAdjacentHTML('afterbegin', `<div class="blockIcons">
 //         <button class="button1" type="button"><img src="images/box.svg"></button>
@@ -46,3 +39,11 @@ form.addEventListener('submit', (e) => {
 //         <div class="date">10 марта 2025</div>
 //         <div class="menu"><img src="images/dot.svg"></div>
 //       </div>`)
+
+
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    window.location.href = 'index.html';
+})
+
