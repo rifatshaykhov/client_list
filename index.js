@@ -8,7 +8,6 @@ const form = document.querySelector('.form-row');
 
 const client = document.querySelector('#new');
 
-const save = document.querySelector('#save');
 
 
 button.forEach(btn => {
@@ -107,12 +106,3 @@ window.addEventListener('load', function() {
         }    
     }
 });
-
-// form.addEventListener('submit', () => {
-//     window.location.href = 'index.html';
-// });
-
-// save.addEventListener('click', () => {
-//     // form.submit();
-//     window.location.href = 'index.html';
-// })
