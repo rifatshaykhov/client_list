@@ -8,6 +8,7 @@ const form = document.querySelector('.form-row');
 
 const client = document.querySelector('#new');
 
+const changeMenu = document.querySelector('#changeMenu');
 
 
 button.forEach(btn => {
@@ -106,3 +107,11 @@ window.addEventListener('load', function() {
         }    
     }
 });
+
+function blockOut() {
+    if (changeMenu.style.display === 'none') {
+        changeMenu.style.display = 'flex';
+    } else {
+        changeMenu.style.display = 'none';
+    }
+}
