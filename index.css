@@ -182,3 +182,8 @@ body {
     display: flex;
     gap: 7px;
 }
+
+.changeMenu a {
+    text-decoration: none;
+    color: black;
+}
