@@ -10,7 +10,9 @@ const client = document.querySelector('#new');
 
 const changeMenu = document.querySelectorAll('.changeMenu');
 
-const menu = document.querySelectorAll('.menu')
+const menu = document.querySelectorAll('.menu');
+
+const del = document.querySelector('.del')
 
 
 button.forEach(btn => {
@@ -142,3 +144,18 @@ document.addEventListener('click', (e) => {
         closeAllMenus();
     }
 })
+
+document.addEventListener('click', (e) => {
+
+    const menu1 = document.querySelector('.changeMenu')
+
+    let parent = menu1.parentElement;
+
+    // let pars = e.target.parentElement;
+    // console.log('hello')
+    // console.log(parent)
+    // console.log(pars)
+    if (e.target.classList.contains('del')) {
+        parent.remove()
+    }
+}) 
