@@ -8,7 +8,9 @@ const form = document.querySelector('.form-row');
 
 const client = document.querySelector('#new');
 
-const changeMenu = document.querySelector('#changeMenu');
+const changeMenu = document.querySelectorAll('.changeMenu');
+
+const menu = document.querySelectorAll('.menu')
 
 
 button.forEach(btn => {
@@ -109,9 +111,34 @@ window.addEventListener('load', function() {
 });
 
 function blockOut() {
-    if (changeMenu.style.display === 'none') {
-        changeMenu.style.display = 'flex';
-    } else {
-        changeMenu.style.display = 'none';
-    }
+        changeMenu.forEach(elements => {
+            if (elements.style.display === 'none') {
+                elements.style.display = 'flex';
+            } else {
+                elements.style.display = 'none';
+            };
+        });
+};
+
+function closeAllMenus() {
+    changeMenu.forEach(menu => {
+        if (menu.classList.contains('active')) {
+            menu.classList.remove('active');
+        }
+    });
 }
+
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('menu')) {
+        const menuButton = e.target;
+        const menuContent = menuButton.nextElementSibling;
+
+        closeAllMenus();
+
+        menuContent.classList.toggle('active');
+
+    } else {
+
+        closeAllMenus();
+    }
+})
