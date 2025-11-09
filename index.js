@@ -151,10 +151,6 @@ document.addEventListener('click', (e) => {
 
     let parent = menu1.parentElement;
 
-    // let pars = e.target.parentElement;
-    // console.log('hello')
-    // console.log(parent)
-    // console.log(pars)
     if (e.target.classList.contains('del')) {
         parent.remove()
     }
