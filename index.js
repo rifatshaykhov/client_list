@@ -12,7 +12,9 @@ const changeMenu = document.querySelectorAll('.changeMenu');
 
 const menu = document.querySelectorAll('.menu');
 
-const del = document.querySelector('.del')
+const del = document.querySelector('.del');
+
+const nameHtml = document.querySelectorAll('.nameHtml')
 
 
 button.forEach(btn => {
@@ -97,7 +99,7 @@ function greet() {
     history.pushState(null, null, location.href.split('?')[0]);    
 }
 
-setTimeout(greet, 50);
+// setTimeout(greet, 50);
 
 window.addEventListener('load', function() {
     const params = new URLSearchParams(window.location.search);
@@ -111,6 +113,7 @@ window.addEventListener('load', function() {
         }    
     }
 });
+
 
 function blockOut() {
         changeMenu.forEach(elements => {
@@ -154,4 +157,24 @@ document.addEventListener('click', (e) => {
     if (e.target.classList.contains('del')) {
         parent.remove()
     }
-}) 
+})
+
+
+const spisok = Array.from(nameHtml).map(element => element.textContent);
+
+const spisokBlocks = Array.from(blocks).map(element => element.textContent);
+
+console.log(spisokBlocks.at(0))
+
+
+// function saveData() {
+//     const spisok = Array.from(nameHtml).map(element => element.textContent);
+
+//     localStorage.setItem('name', spisok.at(0))
+
+//     window.location.href = 'pages/edit.html'
+// }
+
+// const data = localStorage.getItem('name')
+// const naming = document.querySelector('#full-name-html');
+// naming.value = data
