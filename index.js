@@ -164,8 +164,17 @@ const spisok = Array.from(nameHtml).map(element => element.textContent);
 
 const spisokBlocks = Array.from(blocks).map(element => element.textContent);
 
-console.log(spisokBlocks.at(0))
+// console.log(spisokBlocks.at(0))
 
+menu.forEach(el => {
+    el.addEventListener('click', (e) => {
+        const childElement = e.target;
+
+        const parent = childElement.parentElement;
+
+        console.log(parent.textContent)
+    })
+})
 
 // function saveData() {
 //     const spisok = Array.from(nameHtml).map(element => element.textContent);
