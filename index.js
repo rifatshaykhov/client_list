@@ -14,7 +14,9 @@ const menu = document.querySelectorAll('.menu');
 
 const del = document.querySelector('.del');
 
-const nameHtml = document.querySelectorAll('.nameHtml')
+const nameHtml = document.querySelectorAll('.nameHtml');
+
+const naming = document.querySelector('#full-name-html');
 
 
 button.forEach(btn => {
@@ -162,28 +164,38 @@ document.addEventListener('click', (e) => {
 
 const spisok = Array.from(nameHtml).map(element => element.textContent);
 
-const spisokBlocks = Array.from(blocks).map(element => element.textContent);
-
-// console.log(spisokBlocks.at(0))
+let num;
 
 menu.forEach(el => {
     el.addEventListener('click', (e) => {
+
         const childElement = e.target;
 
         const parent = childElement.parentElement;
 
-        console.log(parent.textContent)
+        const text = parent.textContent
+        const arriv = text.includes(spisok.at(num))
+
+        for (let i = 0; i <= spisok.length; i++) {
+            if (text.includes(spisok.at(i))) {
+                num = i;
+            }
+        }
+
+        console.log(num)
+        console.log(spisok)
     })
 })
 
-// function saveData() {
-//     const spisok = Array.from(nameHtml).map(element => element.textContent);
+function saveData() {
 
-//     localStorage.setItem('name', spisok.at(0))
+    localStorage.setItem('name', spisok.at(num))
 
-//     window.location.href = 'pages/edit.html'
-// }
+    window.location.href = 'pages/edit.html'
 
-// const data = localStorage.getItem('name')
-// const naming = document.querySelector('#full-name-html');
-// naming.value = data
+}
+
+
+
+const data = localStorage.getItem('name');
+naming.value = data;
