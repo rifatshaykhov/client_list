@@ -16,7 +16,19 @@ const del = document.querySelector('.del');
 
 const nameHtml = document.querySelectorAll('.nameHtml');
 
+const companyHtml = document.querySelectorAll('.companyHtml');
+
 const naming = document.querySelector('#full-name-html');
+
+const comp = document.querySelector('#companyHtml');
+
+const emailHtml = document.querySelectorAll('.emailHtml');
+
+const email = document.querySelector('#emailHtml');
+
+const numberHtml = document.querySelectorAll('.numberHtml');
+
+const number = document.querySelector('#phoneHtml');
 
 
 button.forEach(btn => {
@@ -101,7 +113,7 @@ function greet() {
     history.pushState(null, null, location.href.split('?')[0]);    
 }
 
-// setTimeout(greet, 50);
+setTimeout(greet, 50);
 
 window.addEventListener('load', function() {
     const params = new URLSearchParams(window.location.search);
@@ -164,6 +176,12 @@ document.addEventListener('click', (e) => {
 
 const spisok = Array.from(nameHtml).map(element => element.textContent);
 
+const spisok1 = Array.from(companyHtml).map(element => element.textContent);
+
+const spisok2 = Array.from(emailHtml).map(element => element.textContent);
+
+const spisok3 = Array.from(numberHtml).map(element => element.textContent);
+
 let num;
 
 menu.forEach(el => {
@@ -183,13 +201,19 @@ menu.forEach(el => {
         }
 
         console.log(num)
-        console.log(spisok)
+        console.log(spisok3)
     })
 })
 
 function saveData() {
 
-    localStorage.setItem('name', spisok.at(num))
+    localStorage.setItem('name', spisok.at(num));
+
+    localStorage.setItem('company', spisok1.at(num));
+
+    localStorage.setItem('email', spisok2.at(num));
+
+    localStorage.setItem('number', spisok3.at(num));
 
     window.location.href = 'pages/edit.html'
 
@@ -198,4 +222,10 @@ function saveData() {
 
 
 const data = localStorage.getItem('name');
+const data1 = localStorage.getItem('company');
+const data2 = localStorage.getItem('email');
+const data3 = localStorage.getItem('number');
+number.value = data3;
+email.value = data2;
+comp.value = data1;
 naming.value = data;
