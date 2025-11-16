@@ -70,3 +70,47 @@ a {
 .form-row input:focus {
     outline: 2px solid #C0C0C0;
 }
+
+#status {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    gap: 15px;
+    align-items: end;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 35px;
+    background-color: #CEFFCD;
+    color: #337232;
+    font-size: 16px;
+    border-radius: 99px;
+    font-weight: 600;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: grey;
+    font-size: 16px;
+}
+
+#changeStatus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    box-shadow: 1px 1px 5px grey;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 300;
+}
