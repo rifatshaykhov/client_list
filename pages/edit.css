@@ -73,9 +73,7 @@ a {
 
 #status {
     display: flex;
-    justify-content: space-between;
-    width: 250px;
-    gap: 15px;
+    justify-content: left;
     align-items: end;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -105,7 +103,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
+    width: 150px;
     height: 35px;
     background-color: white;
     box-shadow: 1px 1px 5px grey;
@@ -113,4 +111,13 @@ a {
     font-size: 16px;
     border-radius: 10px;
     font-weight: 300;
+    margin-left: 10px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    margin-left: 55px;
 }
